@@ -40,12 +40,25 @@
         <TextView
             android:id="@+id/tvNotes"
             android:text="Notes goes here"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:textStyle="normal"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:text="Date"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="10"
+            android:padding="8dp"
 
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="match_parent" />
 
-            />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
